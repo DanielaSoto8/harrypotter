@@ -53,10 +53,10 @@ body {
 
 
 
-.ataque img:hover,
+.attack img:hover,
 .defensa img:hover {
     flex-direction: column;
-    width: 8em;
+    width: 5em;
     filter: drop-shadow(1px 1px 20px rgb(13, 175, 51));
     transition: 2s;
     -webkit-transition: 2s;
