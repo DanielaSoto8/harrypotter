@@ -1,0 +1,289 @@
+body {
+    background-color: black;
+}
+#fondo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+#play {
+    margin-top: 25%;
+    height: 7em;
+
+}
+
+#play:hover {
+    margin-top: 25%;
+    height: 7.5em;
+    filter: drop-shadow(1px 1px 20px black);
+    transition: 2s;
+}
+
+.game {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+
+
+
+
+.ataque img:hover,
+.defensa img:hover {
+    flex-direction: column;
+    width: 8em;
+    filter: drop-shadow(1px 1px 20px rgb(13, 175, 51));
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+#jugador {
+    position: relative;
+    top: 50px;
+    left: 410px;
+    width: 350px;
+}
+
+#imagenJ {
+
+    width: 35em;
+    height: 35em;
+    transform: translatey(0px);
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    -webkit-transform: translatey(0px);
+    -moz-transform: translatey(0px);
+    -ms-transform: translatey(0px);
+    -o-transform: translatey(0px);
+}
+
+#enemigo {
+    position: absolute;
+    top: 50px;
+    left: 1090px;
+    width: 350px;
+}
+
+
+#mensaje {
+
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 15em;
+    width: 10em;
+    z-index: 10000;
+    background-size: contain;
+
+}
+
+#button {
+    margin-top: 90;
+
+}
+
+#perdedor {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    font-size: 19px;
+    font-family: 'Henny Penny', cursive;
+    height: 15em;
+    width: 10em;
+    z-index: 10000;
+    background-size: contain;
+
+}
+
+/* le ponemos el estilo a la caja de texto que almacena el mensaje del ganador*/
+#ganador {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    font-size: 19px;
+    font-family: 'Henny Penny', cursive;
+    height: 15em;
+    width: 10em;
+    z-index: 10000;
+    background-size: contain;
+
+}
+
+/* desde esta linea hasta la 142 le damos estilo a las barras de salud de los personajes para que se reprersente se resta en pantalla*/
+.bar {
+    background-color: #f1e20c;
+    padding: 0px;
+
+}
+
+.bar-container {
+    width: 65%;
+    height: 20px;
+    border: 1px solid #1a0ec2;
+    overflow: hidden;
+}
+
+.bar {
+    background-color: rgb(20, 190, 26);
+    height: 20px;
+    transition: width 0.3s ease;
+}
+
+.bar.red {
+    background-color: rgb(218, 25, 25);
+}
+
+#vidaEnemigo {
+    left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(203, 245, 14);
+    padding-top: 1px;
+    font-family: 'Henny Penny', cursive;
+}
+
+#vidaJugador {
+    left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(181, 221, 37);
+    padding-top: 1px;
+    font-family: 'Henny Penny', cursive;
+}
+
+#boton {
+    margin-top: 25%;
+    height: 5em;
+
+}
+
+#boton:hover {
+    margin-top: 25%;
+    height: 7.5em;
+    filter: drop-shadow(1px 1px 20px black);
+    transition: 2s;
+}
+
+h3 {
+    color: blanchedalmond;
+    font-family: 'Henny Penny', cursive;
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-content {
+    width: 100%;
+    height: 100%;
+}
+
+
+.players-content {
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+}
+
+.actions {
+    width: 100%;
+    height: 30%;
+}
+
+.settings {
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.message {
+    width: 20%;
+    color: white;
+}
+
+.attacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.attack {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+.defense {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+   display: flex;
+}
+
+
+.defensa{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+h1{
+    color: bisque;
+}

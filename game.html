@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script src="js/juego.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <center>
+        <H1>Bienvenidos a mi juego </H1>
+    </center>
+
+    <audio autoplay loop preload="auto" src="ringtones-harry-potter.mp3"></audio>
+
+    <div class="content game">
+        <div class="boton">
+            <a href="index.html">
+                VOLVER
+            </a>
+
+        </div>
+        <div class="content players-content">
+            <div class="players" id="mainPlayer">
+                <img id="imgMainPlayer" src="jugador1.gif" alt="">
+                <div class="bar-container">
+                    <div class="bar" id="playerLife">100</div>
+                </div>
+                <div id="playerLife" style="color: white;"></div>
+            </div>
+            <div class="message" id="message">
+            </div>
+            <div class="players enemigo" id="enemy">
+                <img id="imgEnemy" src="jugador1.gif" alt="">
+                <div class="bar-container">
+                    <div class="bar" id="enemyLife">100</div>
+                </div>
+            </div>
+        </div>
+        <div class="content actions">
+            <div id="attacks" class="attacks">
+                <div class="attack">
+                    <img src="assets/imgs/tagua.PNG" onclick="playerAttack('agua')">
+                </div>
+
+                <div class="attack">
+                    <img src="assets/imgs/taire.PNG" onclick="playerAttack('aire');">
+                </div>
+
+                <div class="attack">
+                    <img src="assets/imgs/tfuego.PNG" onclick="playerAttack('fuego');">
+                </div>
+
+            </div>
+            <div id="defense" class="defense inactive">
+
+                <div class="defensa"><img src="assets/imgs/dagua.PNG" onclick="playerDefense('agua');">
+                </div>
+
+                <div class="defensa"><img src="assets/imgs/daire.PNG" onclick="playerDefense('aire');">
+                </div>
+
+                <div class="defensa"><img src="assets/imgs/dfuego.PNG" onclick="playerDefense('fuego');">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
